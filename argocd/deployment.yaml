@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
         - name: c1
-          image:  kundhana/vprofile_argocd:v1    ------> created image will be there in the dockerHub
+          image: kundhana/vprofile_argocd:v1    ------> created image will be there in the dockerHub
           ports:
             - containerPort: 8080  # Port 8080
