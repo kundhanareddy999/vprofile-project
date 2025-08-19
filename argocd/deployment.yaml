@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: myapp-v1
+  name: vprofile
   namespace: default
 spec:
   replicas: 3 # Number of replicas
@@ -14,7 +14,7 @@ spec:
         app: vprofile-argocd
     spec:
       containers:
-        - name: myapp-v1
+        - name: c1
           image:  kundhana/vprofile_argocd:v1    ------> created image will be there in the dockerHub
           ports:
             - containerPort: 8080  # Port 8080
